@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/menu_start.gd" type="Script" id=1]
+
+[node name="menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="center" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="center"]
+margin_left = 491.0
+margin_top = 290.0
+margin_right = 532.0
+margin_bottom = 310.0
+
+[node name="start" type="Button" parent="center/VBoxContainer"]
+margin_right = 41.0
+margin_bottom = 20.0
+text = "start"
+script = ExtResource( 1 )
