@@ -7,14 +7,8 @@
 
 [node name="main player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 243.476, 149.366 )
-jump = 900
-maxspeed = 600
-maxverticalspeed = 4000
-gravity = 50
-groundfriction = 0.85
-airfriction = 0.95
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 format = 1
-tile_data = PoolIntArray( 262146, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0, 327686, 1, 0, 393222, 1, 0 )
+tile_data = PoolIntArray( 262146, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0 )

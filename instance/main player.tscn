@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/mainplayer.gd" type="Script" id=1]
-[ext_resource path="res://assets/Webp.net-resizeimage (3).png" type="Texture" id=2]
+[ext_resource path="res://assets/gigel.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 31.0565
@@ -9,7 +9,12 @@ radius = 31.0565
 [node name="main player" type="KinematicBody2D"]
 script = ExtResource( 1 )
 speed = 100
-jump = 100
+jump = 900
+maxspeed = 600
+maxverticalspeed = 4000
+gravity = 50
+groundfriction = 0.85
+airfriction = 0.95
 
 [node name="colision" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
