@@ -1,10 +1,11 @@
-[gd_resource type="TileSet" load_steps=9 format=2]
+[gd_resource type="TileSet" load_steps=10 format=2]
 
 [ext_resource path="res://assets/iarba.png" type="Texture" id=1]
 [ext_resource path="res://assets/tarana.png" type="Texture" id=2]
 [ext_resource path="res://assets/iarba.jos.png" type="Texture" id=3]
 [ext_resource path="res://assets/cerlol.png" type="Texture" id=4]
 [ext_resource path="res://assets/nor.png" type="Texture" id=5]
+[ext_resource path="res://assets/Dirt_1.png" type="Texture" id=6]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -84,3 +85,13 @@ segments = PoolVector2Array( 0, 0, 64, 64, 64, 64, 0, 64, 0, 64, 0, 0 )
 4/navigation_offset = Vector2( 0, 0 )
 4/shapes = [  ]
 4/z_index = 0
+5/name = "Dirt_1.png 5"
+5/texture = ExtResource( 6 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 32, 32 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+5/z_index = 0

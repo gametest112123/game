@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/mainplayer.gd" type="Script" id=1]
 [ext_resource path="res://assets/gigel.png" type="Texture" id=2]
@@ -6,7 +6,12 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 31.0565
 
-[node name="main player" type="KinematicBody2D"]
+[sub_resource type="CircleShape2D" id=2]
+radius = 33.7881
+
+[node name="main player" type="KinematicBody2D" groups=[
+"player",
+]]
 script = ExtResource( 1 )
 speed = 100
 jump = 900
@@ -21,3 +26,9 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 2 )
+
+[node name="detector" type="Area2D" parent="."]
+
+[node name="detect" type="CollisionShape2D" parent="detector"]
+shape = SubResource( 2 )
+[connection signal="body_entered" from="detector" to="." method="i_think_kill"]

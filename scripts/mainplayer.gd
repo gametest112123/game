@@ -6,6 +6,7 @@ export var maxverticalspeed=1
 export var gravity=1
 export var groundfriction=float()
 export var airfriction=float()
+export var level=String()
 
 const up=Vector2(0,-1)
 var vel=Vector2()
@@ -48,5 +49,8 @@ func _physics_process(delta):
 			vel.x*=groundfriction
 		else:
 			vel.x*=airfriction
-	
 	move_and_slide(vel,up)
+
+func i_think_kill(body):
+	if body.is_in_group("projkill"):
+		get_tree().change_scene(level)
